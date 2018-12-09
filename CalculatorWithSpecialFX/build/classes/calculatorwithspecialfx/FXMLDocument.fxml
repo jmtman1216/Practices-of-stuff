@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatorwithspecialfx.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.25" layoutX="48.0" layoutY="55.0" orientation="VERTICAL" prefHeight="297.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="73.0">
+               <children>
+                  <TextField fx:id="textField" layoutX="14.0" layoutY="9.0" prefHeight="202.0" prefWidth="510.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="8.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="398.0">
+               <children>
+                  <Button fx:id="two" layoutX="123.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleNum2ButtonAction" text="2" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="223.0" AnchorPane.topAnchor="205.0" />
+                  <Button fx:id="five" layoutX="123.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleNum5ButtonAction" text="5" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="223.0" AnchorPane.topAnchor="155.0" />
+                  <Button fx:id="equals" layoutX="328.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleEqualsButtonAction" prefHeight="23.0" prefWidth="52.0" text="=" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="255.0" />
+                  <Button fx:id="delete" layoutX="19.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" onKeyTyped="#handleDeleteButtonAction" text="Delete" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="255.0" />
+                  <Button fx:id="six" layoutX="224.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleNum6ButtonAction" prefHeight="0.0" prefWidth="52.0" text="6" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="155.0" />
+                  <Button fx:id="times" layoutX="328.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleNumTimesButtonAction" text="*" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="105.0" />
+                  <Button fx:id="three" layoutX="224.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleNum3ButtonAction" text="3" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="205.0" />
+                  <Button fx:id="zero" layoutX="123.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleNum0ButtonAction" onKeyTyped="#handleNum0ButtonAction" prefHeight="25.0" prefWidth="52.0" text="0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="223.0" AnchorPane.topAnchor="255.0" />
+                  <Button fx:id="decimal" layoutX="224.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleNumDecButtonAction" onKeyTyped="#handleNumDecButtonAction" text="." AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="255.0" />
+                  <Button fx:id="nine" layoutX="224.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleNum9ButtonAction" text="9" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="105.0" />
+                  <Button fx:id="minus" layoutX="328.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleNumMinusButtonAction" text="-" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="155.0" />
+                  <Button fx:id="eight" layoutX="123.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleNum8ButtonAction" text="8" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="223.0" AnchorPane.topAnchor="105.0" />
+                  <Button fx:id="one" layoutX="19.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleNum1ButtonAction" text="1" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="205.0" />
+                  <Button fx:id="plus" layoutX="328.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleNumPlusButtonAction" text="+" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="205.0" />
+                  <Button fx:id="four" layoutX="19.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleNum4ButtonAction" text="4" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="155.0" />
+                  <Button fx:id="seven" layoutX="19.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleNum7ButtonAction" text="7" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="105.0" />
+                  <Button fx:id="rparen" layoutX="224.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleNumRParenButtonAction" text=")" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="55.0" />
+                  <Button fx:id="divides" layoutX="328.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleNumDividesButtonAction" text="/" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="55.0" />
+                  <Button fx:id="lparen" layoutX="127.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleNumLParenButtonAction" text="(" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="223.0" AnchorPane.topAnchor="55.0" />
+                  <Button fx:id="clear" layoutX="19.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleClearButtonAction" text="Clear" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="55.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
